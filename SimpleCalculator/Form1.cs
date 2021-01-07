@@ -15,21 +15,37 @@ namespace SimpleCalculator
         double operand1, operand2, result;
         Operations oper = new Operations();
 
-        private void btnSub_Click(object sender, EventArgs e)
+
+        private void btnAdd_Click(object sender, EventArgs e)
         {
-            result = oper.Sub(Convert.ToDouble(txtOperand1.Text),Convert.ToDouble(txtOperand2.Text));
+            operand1 = Convert.ToDouble(txtOperand1.Text);
+            operand2 = Convert.ToDouble(txtOperand2.Text);
+            result = Calculator.Library.Calculator.Add(operand1,operand2);
             txtResult.Text = result.ToString();
         }
 
+        private void btnSub_Click(object sender, EventArgs e)
+        {
+            operand1 = Convert.ToDouble(txtOperand1.Text);
+            operand2 = Convert.ToDouble(txtOperand2.Text);
+            result = Calculator.Library.Calculator.Sub(operand1, operand2);
+            txtResult.Text = result.ToString();
+        }
+
+
         private void btnMul_Click(object sender, EventArgs e)
         {
-            result = oper.Mul(Convert.ToDouble(txtOperand1.Text),Convert.ToDouble(txtOperand2.Text));
+            operand1 = Convert.ToDouble(txtOperand1.Text);
+            operand2 = Convert.ToDouble(txtOperand2.Text);
+            result = Calculator.Library.Calculator.Mul(operand1, operand2);
             txtResult.Text = result.ToString();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            result = oper.Div(Convert.ToDouble(txtOperand1.Text),Convert.ToDouble(txtOperand2.Text));
+            operand1 = Convert.ToDouble(txtOperand1.Text);
+            operand2 = Convert.ToDouble(txtOperand2.Text);
+            result = Calculator.Library.Calculator.Div(operand1, operand2);
             txtResult.Text = result.ToString();
         }
 
@@ -44,11 +60,6 @@ namespace SimpleCalculator
 
         }
 
-        private void btnAdd_Click(object sender, EventArgs e)
-        {
-            result = oper.Add(Convert.ToDouble(txtOperand1.Text),Convert.ToDouble(txtOperand2.Text));
-            txtResult.Text = result.ToString();
-        }
 
         public Form1()
         {
