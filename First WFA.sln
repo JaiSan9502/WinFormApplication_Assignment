@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Login", "Login\Login.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContactApp", "ContactApp\ContactApp.csproj", "{B329827A-352D-4E23-ACC5-6A206262BF7B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestProject_SampleCalculator", "UnitTestProject_SampleCalculator\UnitTestProject_SampleCalculator.csproj", "{E1221A45-D178-4378-87D5-7C53E360A1DA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{B329827A-352D-4E23-ACC5-6A206262BF7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B329827A-352D-4E23-ACC5-6A206262BF7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B329827A-352D-4E23-ACC5-6A206262BF7B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E1221A45-D178-4378-87D5-7C53E360A1DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1221A45-D178-4378-87D5-7C53E360A1DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1221A45-D178-4378-87D5-7C53E360A1DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1221A45-D178-4378-87D5-7C53E360A1DA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
