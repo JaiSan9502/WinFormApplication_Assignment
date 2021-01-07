@@ -7,7 +7,7 @@ namespace UnitTestProject_SampleCalculator
     [TestClass]
     public class OperationTests
     {
-        Operation obj = new Operation();
+        Operation obj = new Operation();//Object of operatoin single responsibility class
         [TestMethod]
         public void testSubtraction()
         {
