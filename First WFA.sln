@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Login", "Login\Login.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContactApp", "ContactApp\ContactApp.csproj", "{B329827A-352D-4E23-ACC5-6A206262BF7B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleCalculator_UnitTesting", "SimpleCalculator_UnitTesting\SimpleCalculator_UnitTesting.csproj", "{BCF9D6EF-2179-4D49-B9BC-E973C0DA1887}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{B329827A-352D-4E23-ACC5-6A206262BF7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B329827A-352D-4E23-ACC5-6A206262BF7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B329827A-352D-4E23-ACC5-6A206262BF7B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BCF9D6EF-2179-4D49-B9BC-E973C0DA1887}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCF9D6EF-2179-4D49-B9BC-E973C0DA1887}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCF9D6EF-2179-4D49-B9BC-E973C0DA1887}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCF9D6EF-2179-4D49-B9BC-E973C0DA1887}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
