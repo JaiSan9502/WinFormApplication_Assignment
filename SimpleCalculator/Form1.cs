@@ -13,20 +13,24 @@ namespace SimpleCalculator
     public partial class Form1 : Form
     {
         double operand1, operand2, result;
+        Operations oper = new Operations();
 
         private void btnSub_Click(object sender, EventArgs e)
         {
-            txtResult.Text = (Convert.ToDouble(txtOperand1.Text) - Convert.ToDouble(txtOperand2.Text)).ToString();
+            result = oper.Sub(Convert.ToDouble(txtOperand1.Text),Convert.ToDouble(txtOperand2.Text));
+            txtResult.Text = result.ToString();
         }
 
         private void btnMul_Click(object sender, EventArgs e)
         {
-            txtResult.Text = (Convert.ToDouble(txtOperand1.Text) * Convert.ToDouble(txtOperand2.Text)).ToString();
+            result = oper.Mul(Convert.ToDouble(txtOperand1.Text),Convert.ToDouble(txtOperand2.Text));
+            txtResult.Text = result.ToString();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            txtResult.Text = (Convert.ToDouble(txtOperand1.Text) / Convert.ToDouble(txtOperand2.Text)).ToString();
+            result = oper.Div(Convert.ToDouble(txtOperand1.Text),Convert.ToDouble(txtOperand2.Text));
+            txtResult.Text = result.ToString();
         }
 
         private void txtOperand1_KeyPress(object sender, KeyPressEventArgs e)
@@ -35,9 +39,15 @@ namespace SimpleCalculator
             e.Handled = true;
         }
 
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            txtResult.Text = (Convert.ToDouble(txtOperand1.Text) + Convert.ToDouble(txtOperand2.Text)).ToString();
+            result = oper.Add(Convert.ToDouble(txtOperand1.Text),Convert.ToDouble(txtOperand2.Text));
+            txtResult.Text = result.ToString();
         }
 
         public Form1()
