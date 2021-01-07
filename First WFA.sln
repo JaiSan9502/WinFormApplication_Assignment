@@ -19,6 +19,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContactApp", "ContactApp\Co
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleCalculator_UnitTesting", "SimpleCalculator_UnitTesting\SimpleCalculator_UnitTesting.csproj", "{BCF9D6EF-2179-4D49-B9BC-E973C0DA1887}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calculator.Library", "Calculator.Library\Calculator.Library.csproj", "{92CE25E7-C626-4B23-954E-6A40371C0669}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleCalculatorUnitTestUsingLibraryClass.Test", "SImpleCalculatorUnitTestUsingLibraryClass\SimpleCalculatorUnitTestUsingLibraryClass.Test.csproj", "{023ABC1E-CDED-465A-842C-E144036F02EF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +61,14 @@ Global
 		{BCF9D6EF-2179-4D49-B9BC-E973C0DA1887}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BCF9D6EF-2179-4D49-B9BC-E973C0DA1887}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BCF9D6EF-2179-4D49-B9BC-E973C0DA1887}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92CE25E7-C626-4B23-954E-6A40371C0669}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92CE25E7-C626-4B23-954E-6A40371C0669}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92CE25E7-C626-4B23-954E-6A40371C0669}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92CE25E7-C626-4B23-954E-6A40371C0669}.Release|Any CPU.Build.0 = Release|Any CPU
+		{023ABC1E-CDED-465A-842C-E144036F02EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{023ABC1E-CDED-465A-842C-E144036F02EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{023ABC1E-CDED-465A-842C-E144036F02EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{023ABC1E-CDED-465A-842C-E144036F02EF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
