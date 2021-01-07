@@ -13,19 +13,20 @@ namespace SimpleCalculator
     public partial class Form1 : Form
     {
         double operand1, operand2, result;
-        Operation oper = new Operation();
 
-        public void btnSub_Click(object sender, EventArgs e)
+        private void btnSub_Click(object sender, EventArgs e)
         {
-            result = oper.Sub(Convert.ToDouble(txtOperand1.Text), Convert.ToDouble(txtOperand2.Text));
-            txtResult.Text = result.ToString();
+            txtResult.Text = (Convert.ToDouble(txtOperand1.Text) - Convert.ToDouble(txtOperand2.Text)).ToString();
         }
 
         private void btnMul_Click(object sender, EventArgs e)
         {
-            result = oper.Mul(Convert.ToDouble(txtOperand1.Text), Convert.ToDouble(txtOperand2.Text));
-            txtResult.Text = result.ToString();
-            //txtResult.Text = (Convert.ToDouble(txtOperand1.Text) * Convert.ToDouble(txtOperand2.Text)).ToString();
+            txtResult.Text = (Convert.ToDouble(txtOperand1.Text) * Convert.ToDouble(txtOperand2.Text)).ToString();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            txtResult.Text = (Convert.ToDouble(txtOperand1.Text) / Convert.ToDouble(txtOperand2.Text)).ToString();
         }
 
         private void txtOperand1_KeyPress(object sender, KeyPressEventArgs e)
@@ -34,16 +35,9 @@ namespace SimpleCalculator
             e.Handled = true;
         }
 
-        private void bntnDivid_Click(object sender, EventArgs e)
-        {
-            result = oper.Div(Convert.ToDouble(txtOperand1.Text), Convert.ToDouble(txtOperand2.Text));
-            txtResult.Text = result.ToString();
-        }
-
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            result = oper.Add(Convert.ToDouble(txtOperand1.Text), Convert.ToDouble(txtOperand2.Text));
-            txtResult.Text = result.ToString();
+            txtResult.Text = (Convert.ToDouble(txtOperand1.Text) + Convert.ToDouble(txtOperand2.Text)).ToString();
         }
 
         public Form1()

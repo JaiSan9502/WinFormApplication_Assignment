@@ -38,8 +38,7 @@ namespace SimpleCalculator
             this.label3 = new System.Windows.Forms.Label();
             this.btnSub = new System.Windows.Forms.Button();
             this.btnMul = new System.Windows.Forms.Button();
-            this.btnDivide = new System.Windows.Forms.Button();
-            this.bntnDivid = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -131,31 +130,23 @@ namespace SimpleCalculator
             this.btnMul.UseVisualStyleBackColor = true;
             this.btnMul.Click += new System.EventHandler(this.btnMul_Click);
             // 
-            // btnDivide
+            // button3
             // 
-            this.btnDivide.Location = new System.Drawing.Point(0, 0);
-            this.btnDivide.Name = "btnDivide";
-            this.btnDivide.Size = new System.Drawing.Size(75, 23);
-            this.btnDivide.TabIndex = 0;
-            // 
-            // bntnDivid
-            // 
-            this.bntnDivid.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bntnDivid.Location = new System.Drawing.Point(457, 234);
-            this.bntnDivid.Name = "bntnDivid";
-            this.bntnDivid.Size = new System.Drawing.Size(81, 45);
-            this.bntnDivid.TabIndex = 9;
-            this.bntnDivid.Text = "Divide";
-            this.bntnDivid.UseVisualStyleBackColor = true;
-            this.bntnDivid.Click += new System.EventHandler(this.bntnDivid_Click);
+            this.button3.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Location = new System.Drawing.Point(463, 234);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(81, 45);
+            this.button3.TabIndex = 9;
+            this.button3.Text = "Divide";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(695, 353);
-            this.Controls.Add(this.bntnDivid);
-            this.Controls.Add(this.btnDivide);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.btnMul);
             this.Controls.Add(this.btnSub);
             this.Controls.Add(this.txtResult);
@@ -183,8 +174,7 @@ namespace SimpleCalculator
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnSub;
         private System.Windows.Forms.Button btnMul;
-        private System.Windows.Forms.Button btnDivide;
-        private System.Windows.Forms.Button bntnDivid;
+        private System.Windows.Forms.Button button3;
     }
 }
 
